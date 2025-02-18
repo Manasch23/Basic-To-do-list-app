@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My To-Do List</h1>
+
+    <!-- Folder Creation Form -->
+    <form id="folder-form">
+      <input type="text" id="folder-name" placeholder="Enter folder name" required>
+      <button type="submit">Create Folder</button>
+    </form>
+
+    <!-- Folder List -->
+    <ul id="folder-list">
+      <!-- Folders will be added here -->
+    </ul>
+
+    <!-- Task Creation Form -->
+    <form id="task-form">
+      <input type="text" id="task" placeholder="Enter your task" required>
+      <input type="datetime-local" id="date-time" required>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <!-- Task List -->
+    <ul id="task-list">
+      <!-- Tasks will be added here -->
+    </ul>
+
+    <!-- Logout Link -->
+    <a href="login.html" class="logout">Logout</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
